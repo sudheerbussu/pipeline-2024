@@ -1,0 +1,103 @@
+
+----------------------------------------DAILY CHECKS-------------------------------------------------------
+
+-------PIPELINE---------
+
+A Jenkins pipeline is asuit of  plug-ins ,which supports implementing and integrating continuos delivery od pipelines into Jenkins.
+
+The defination of pipeline written into a file Known as Jenkins file.
+
+Two types of jenkins pipelines are available
+1.SCripted
+2.Declarative
+
+
+
+
+------------GIT-----------
+git init
+git satus
+git add .
+
+git pull
+git commit -m "message"
+
+git push 
+-----------------------------------------------
+9/12/2024
+
+---------PIllars Of AWS?
+
+	1.Operational Excellence ---Run,monitor and Workload 
+	2.Security	----protect info,Identity and access managemnt,data protection,application security.
+	3.Reliability-------Workload to recover from infracture
+	4.Performance Efficiency----efficient use of resourses like compute and n/w,network,content delivery.
+	5.Cost Optimization------Systems that reduces the cost and maximise the  return on investment.
+	6.Sustainability---------, especially energy consumption and efficiency, since they are important 	   levers for architects to inform direct action to reduce resource usage
+
+-------------Golden AMI
+
+An Amazon Machine Image (AMI) is a pre-configured virtual machine image that's used to launch instances in the Amazon Elastic Compute Cloud (EC2), while a golden AMI is a type of AMI that's used as a template to create other AMIs: 
+AMI
+An AMI contains templates for the root volume, launch permissions, and a block device mapping. You can launch multiple instances from a single AMI. 
+Golden AMI
+A golden AMI is a base AMI that's been approved by the IT Operations team. It's a pre-configured template EC2 machine image that includes a base operating system, commonly used software packages, and any additional configuration required to launch the AMI. Golden AMIs are also known as master AMIs or base AMIs. 
+Golden AMIs can be beneficial for organizations because they can save time and eliminate errors by allowing administrators to replicate the ideal template instead of creating new AMIs from scratch. They can also help ensure environmental consistency, which can reduce risk and increase repair rates. 
+
+----------------AWS WARDEN---------------------
+AWS Warden is a service provided by Amazon Web Services (AWS) that allows customers to manage and run containers securely in a production environment. It provides a fully managed service that makes it easy to run and manage containers at scale. Warden enables users to create, run, and manage container-based applications with a high level of security, scalability, and reliability. It supports a variety of container runtimes, including Docker, and provides features such as monitoring, logging, and security scanning to ensure the integrity and security of container-based applications.
+
+
+
+
+
+ 
+--------Naming Conventions--------
+
+-------------------WHAT ARE THE OPTIONS TO CONNECT TO YOUR AWS INSTANCE?
+ EX.WITHOUT PEM FILE
+ 
+ Connection options
+Connect to your Linux instance using an SSH client
+
+Connect to your Linux instance using PuTTY
+
+Connect to your Windows instance using an RDP client
+
+Connect to your Windows instance using Fleet Manager
+
+Connect using Session Manager
+
+Connect using EC2 Instance Connect
+
+Connect using EC2 Instance Connect Endpoint
+
+-----------------------------------
+ 
+ 
+ 
+ 
+In the Keys : How to connect to Ec2 instance,When you lost your keypair?	
+
+What are the different recovery stages?
+
+Accidental deletion or stoping instance? and terminate protection option in AWS?
+
+How to enter user data after each reboot?
+
+Ami_ID Vs SnapShot?
+
+How can i use same ami in different regions?
+
+Tags in Aws?
+
+EBS
+EFS
+CROSS ACOOUNT ROLE?
+   Cross account IAM roles allow you to grant access to resources in one AWS account to a user or resource in another AWS account. This is useful for scenarios where you have multiple AWS accounts and need to share resources between them.
+   
+How to take stoping/deleting actions on perticular user or Admin or Root user?
+
+    using deny in policy, even adminstrator also effect with deny policy. Deny has the high precidence over allow.
+
+IAM identity Center?
