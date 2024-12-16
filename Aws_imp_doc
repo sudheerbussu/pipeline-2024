@@ -11,6 +11,39 @@ Two types of jenkins pipelines are available
 1.SCripted
 2.Declarative
 
+--------------Configuring git local to remote repository---------------------
+
+1. Create a remote repository in GIT HUB
+	ex...DEC-2024
+
+    note...:.If repository is Public,no credentials required to Clone
+             If repository is Private,Credentials required to CLone.
+
+	We have to generate a token for Credentials,  From ACCOUNT ------> SECURITY
+
+
+2. Clone the repository 
+
+	$ git clone <repo url>
+
+3. 	ls
+	DEC-2024
+
+4. cd DEC-2024
+	ls
+
+5. ls -a , if we found .git folder then it's a git repository. Otherwise  git pull throws an error. 
+
+6. then RUN
+    git pull
+
+7. then  RUN
+	git push
+
+8. before moving code from local repo to remote repo ,it's always best to use GIT PULL command ,if any uodates 
+	in remote repository it will be loaded to local and then push the updated code to remote repository.cd .
+
+
 
 
 
