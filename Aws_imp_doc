@@ -101,3 +101,7 @@ How to take stoping/deleting actions on perticular user or Admin or Root user?
     using deny in policy, even adminstrator also effect with deny policy. Deny has the high precidence over allow.
 
 IAM identity Center?
+
+
+CROSS AGENT ROLE?
+Policies ?
