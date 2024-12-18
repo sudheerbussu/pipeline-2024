@@ -68,12 +68,12 @@ git push
 	5.Cost Optimization------Systems that reduces the cost and maximise the  return on investment.
 	6.Sustainability---------, especially energy consumption and efficiency, since they are important 	   levers for architects to inform direct action to reduce resource usage
 
--------------Golden AMI
+-------------Golden AMI--------------------------
 
 An Amazon Machine Image (AMI) is a pre-configured virtual machine image that's used to launch instances in the Amazon Elastic Compute Cloud (EC2), while a golden AMI is a type of AMI that's used as a template to create other AMIs: 
-AMI
+-----------AMI--------------------
 An AMI contains templates for the root volume, launch permissions, and a block device mapping. You can launch multiple instances from a single AMI. 
-Golden AMI
+-----------Golden AMI----------------------
 A golden AMI is a base AMI that's been approved by the IT Operations team. It's a pre-configured template EC2 machine image that includes a base operating system, commonly used software packages, and any additional configuration required to launch the AMI. Golden AMIs are also known as master AMIs or base AMIs. 
 Golden AMIs can be beneficial for organizations because they can save time and eliminate errors by allowing administrators to replicate the ideal template instead of creating new AMIs from scratch. They can also help ensure environmental consistency, which can reduce risk and increase repair rates. 
 
@@ -82,12 +82,23 @@ AWS Warden is a service provided by Amazon Web Services (AWS) that allows custom
 
 
 
-
-
  
 --------Naming Conventions--------
 
--------------------WHAT ARE THE OPTIONS TO CONNECT TO YOUR AWS INSTANCE?
+ Naming conventions always help to maintain identity and better understanding of your instances
+
+ex. account naming <account-name>-<Environment>             prod-account-prod
+	Enveronment naming <application-name>-<Environment>     app-name-prod,app-name-test
+	Resource naming <type-enve-any identifier>	 	        web-server-prod-001
+	Ec2 Instance											ubuntu-dev-001
+	s3 bucket												logs-app-prod
+	IAM roles												web-server-prod-role
+	CloudFormation stacks  									prod-account-vpc-cf
+
+	 ** TAGS-- Alyaws use tags while creating resourses and instances to easier the mangement and identification.
+
+	 
+-------------------WHAT ARE THE OPTIONS TO CONNECT TO YOUR AWS INSTANCE?---------
  EX.WITHOUT PEM FILE
  
  Connection options
@@ -138,3 +149,17 @@ IAM identity Center?
 
 CROSS AGENT ROLE?
 Policies ?
+
+-------17-12-2024------
+
+Can i recreate a bucket name once used?
+
+different Storage classses?
+
+Life cycle policies?
+
+Can i recocer the deleted file in S3?
+
+ans... Yes if we enable the versoning. Bydefault versioning is not enbled.
+ 
+note: S3 is a global and regional Service.
