@@ -47,7 +47,7 @@ Two types of jenkins pipelines are available
 
 
 
-------------GIT-----------
+-----to add local files to GIT-----------
 git init
 git satus
 git add .
@@ -56,6 +56,15 @@ git pull
 git commit -m "message"
 
 git push 
+
+-------to create new branch , shift to that branch and puish the new branch to remote repo we have to follow
+
+
+to	create branch --------------> git branch <new_branch-name>         ex : git branch aws
+to switch to that branch -------> git checkout <new_branch-name>	   ex : git checkout aws
+to push branch to remote repo---> git push -u origin <new-branch-name> ex : git push -u origin aws
+to list all the branches ------->git branch
+to check the current branch ---->git branch --show-current OR git branch
 -----------------------------------------------
 9/12/2024
 
@@ -97,26 +106,25 @@ ex. account naming <account-name>-<Environment>             prod-account-prod
 
 	 ** TAGS-- Alyaws use tags while creating resourses and instances to easier the mangement and identification.
 
-	 
+
 -------------------WHAT ARE THE OPTIONS TO CONNECT TO YOUR AWS INSTANCE?---------
+
+We can connect to the AWS instances in mainly 4 ways
+	1.EC2-instance-connect -----Just click on connect option to get access into the instance.
+	2.Session Manager -----	Using AWS CLI to connect
+	3.SSH client	-----Using git bash and ssh client example 
+	4.Ec2 serial port----- By enabling /allowing the port we can connect to the aws instance.
+
+
+
+
  EX.WITHOUT PEM FILE
+
+	You can connect to an EC2 instance without a PEM key using 
+	AWS Systems Manager, Session Manager or EC2 Instance Connect.
+
  
- Connection options
-Connect to your Linux instance using an SSH client
-
-Connect to your Linux instance using PuTTY
-
-Connect to your Windows instance using an RDP client
-
-Connect to your Windows instance using Fleet Manager
-
-Connect using Session Manager
-
-Connect using EC2 Instance Connect
-
-Connect using EC2 Instance Connect Endpoint
-
------------------------------------
+ ----------------------------------------------
  
  
  
